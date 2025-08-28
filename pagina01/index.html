@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNH Social - Guia Completo para Conseguir sua Habilitação Gratuita</title>
+    <meta name="description" content="Descubra como conseguir a CNH Social gratuita. Guia completo com documentos necessários, critérios de elegibilidade e passo a passo detalhado.">
+    <meta name="keywords" content="CNH Social, habilitação gratuita, carteira de motorista gratuita, DETRAN, documentos CNH">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateX(-50px) translateY(-50px); }
+            100% { transform: translateX(0px) translateY(0px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Main Content */
+        main {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .section {
+            margin-bottom: 80px;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Requirements Section */
+        .requirements {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 4rem 0;
+            border-radius: 20px;
+            margin: 4rem 0;
+        }
+
+        .requirements-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .requirement-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .requirement-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #28a745, #20c997);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: white;
+        }
+
+        /* Steps Section */
+        .steps {
+            position: relative;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .step::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            z-index: -1;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 2rem;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .step-content {
+            flex: 1;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .step-content h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: linear-gradient(45deg, #e9ecef, #dee2e6);
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            display: none;
+            border-top: 1px solid #eee;
+        }
+
+        .faq-answer.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #ecf0f1;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: #667eea;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .step {
+                flex-direction: column !important;
+            }
+            
+            .step-number {
+                margin: 1rem 0;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CNH Social</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#requisitos">Requisitos</a></li>
+                <li><a href="#passo-a-passo">Como Fazer</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1>CNH Social Gratuita</h1>
+                <p>Descubra como conseguir sua Carteira Nacional de Habilitação sem pagar nada</p>
+                <a href="#requisitos" class="cta-button">Começar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section class="section" id="sobre">
+                <h2>O que é a CNH Social?</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">📋</div>
+                        <h3>Programa Governamental</h3>
+                        <p>A CNH Social é um programa do governo que oferece carteira de motorista gratuita para pessoas de baixa renda cadastradas no CadÚnico.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">💰</div>
+                        <h3>Totalmente Gratuita</h3>
+                        <p>Todas as taxas são isentas: exames médicos, psicotécnico, aulas teóricas, práticas e taxas do DETRAN são gratuitas.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎯</div>
+                        <h3>Oportunidade de Emprego</h3>
+                        <p>Ter CNH abre portas para diversas oportunidades de trabalho, especialmente em delivery, transporte e logística.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section requirements" id="requisitos">
+                <div class="container">
+                    <h2>Quem Pode Participar?</h2>
+                    <div class="requirements-list">
+                        <div class="requirement-item">
+                            <div class="requirement-icon">✓</div>
+                            <span>Estar inscrito no CadÚnico</span>
+                        </div>
+                        <div class="requirement-item">
+                            <div class="requirement-icon">✓</div>
+                            <span>Renda familiar até 3 salários mínimos</span>
+                        </div>
+                        <div class="requirement-item">
+                            <div class="requirement-icon">✓</div>
+                            <span>Ter mais de 18 anos</span>
+                        </div>
+                        <div class="requirement-item">
+                            <div class="requirement-icon">✓</div>
+                            <span>Saber ler e escrever</span>
+                        </div>
+                        <div class="requirement-item">
+                            <div class="requirement-icon">✓</div>
+                            <span>Não possuir CNH válida</span>
+                        </div>
+                        <div class="requirement-item">
+                            <div class="requirement-icon">✓</div>
+                            <span>Residir no estado há pelo menos 2 anos</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="documentos">
+                <h2>Documentos Necessários</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">🆔</div>
+                        <h3>Documentos Pessoais</h3>
+                        <p>RG original e cópia, CPF original e cópia, certidão de nascimento ou casamento, comprovante de residência atual.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">💼</div>
+                        <h3>Comprovantes de Renda</h3>
+                        <p>Carteira de trabalho, declaração de renda, comprovantes de benefícios sociais (se houver).</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📄</div>
+                        <h3>CadÚnico</h3>
+                        <p>Comprovante de inscrição no Cadastro Único atualizado nos últimos 2 anos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section steps" id="passo-a-passo">
+                <h2>Passo a Passo Completo</h2>
+                
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Verifique os Requisitos</h3>
+                        <p>Confirme se você atende todos os critérios da CNH Social. Verifique se seu CadÚnico está atualizado e se sua renda familiar está dentro do limite estabelecido.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Reúna os Documentos</h3>
+                        <p>Separe todos os documentos necessários: RG, CPF, comprovante de residência, comprovante do CadÚnico e documentos de renda.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Faça a Inscrição</h3>
+                        <p>Procure o DETRAN do seu estado ou acesse o site oficial. Alguns estados fazem inscrições online, outros presencialmente.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Aguarde a Seleção</h3>
+                        <p>Após a inscrição, aguarde a análise dos documentos. O resultado geralmente sai em até 30 dias.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Inicie o Processo</h3>
+                        <p>Se aprovado, você receberá orientações para iniciar: exames médico e psicotécnico, curso teórico e prático.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="faq">
+                <h2>Perguntas Frequentes</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Quanto tempo demora para conseguir a CNH Social?
+                    </div>
+                    <div class="faq-answer">
+                        O processo completo varia de 3 a 6 meses, dependendo da disponibilidade de vagas e do tempo para realizar todas as etapas: exames, aulas e provas.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Posso escolher qualquer categoria de CNH?
+                    </div>
+                    <div class="faq-answer">
+                        Geralmente a CNH Social oferece apenas a categoria A (moto) ou B (carro). A disponibilidade varia conforme o estado e a demanda.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        E se eu reprovar em alguma etapa?
+                    </div>
+                    <div class="faq-answer">
+                        Em caso de reprovação, você terá direito a refazer gratuitamente, respeitando os prazos estabelecidos pelo DETRAN.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        O CadÚnico precisa estar atualizado?
+                    </div>
+                    <div class="faq-answer">
+                        Sim, é obrigatório que o CadÚnico esteja atualizado nos últimos 2 anos. Se não estiver, procure um CRAS para atualizar.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Todos os estados oferecem CNH Social?
+                    </div>
+                    <div class="faq-answer">
+                        A maioria dos estados oferece o programa, mas as regras e períodos de inscrição podem variar. Consulte o DETRAN do seu estado.
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="dicas">
+                <h2>Dicas Importantes</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">⚡</div>
+                        <h3>Fique Atento aos Prazos</h3>
+                        <p>As inscrições para CNH Social têm períodos específicos. Acompanhe o site do DETRAN do seu estado para não perder.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📚</div>
+                        <h3>Estude Antecipadamente</h3>
+                        <p>Mesmo sendo gratuito, você precisa ser aprovado. Estude o código de trânsito e faça simulados online.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎯</div>
+                        <h3>Seja Persistente</h3>
+                        <p>As vagas são limitadas. Se não conseguir desta vez, não desista! Continue tentando nas próximas oportunidades.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CNH Social</h3>
+                    <p>Seu guia completo para conseguir a carteira de motorista gratuita através do programa governamental CNH Social.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <p><a href="#">DETRAN Nacional</a></p>
+                    <p><a href="#">CadÚnico</a></p>
+                    <p><a href="#">Simulados Online</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Importante</h3>
+                    <p>Este site é informativo. Sempre consulte os canais oficiais do DETRAN do seu estado para informações atualizadas.</p>
+                </div>
+            </div>
+            <p>&copy; 2025 CNH Social - Guia Informativo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // FAQ toggle
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const isActive = answer.classList.contains('active');
+            
+            // Close all FAQ answers
+            document.querySelectorAll('.faq-answer').forEach(ans => {
+                ans.classList.remove('active');
+            });
+            
+            // Open clicked FAQ if it wasn't active
+            if (!isActive) {
+                answer.classList.add('active');
+            }
+        }
+
+        // Cards animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe cards
+        document.querySelectorAll('.card, .step').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
